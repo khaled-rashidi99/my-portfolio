@@ -15,10 +15,11 @@ export default function HeroSection() {
             </span>
             <br></br>
             <TypeAnimation
+              className="mt-2"
               sequence={[
                 "Khaled AlRashidi",
                 1500,
-                "Enthusiastic",
+                "Tech Enthusiastic",
                 1500,
                 "Front-End Developer",
                 1500,
