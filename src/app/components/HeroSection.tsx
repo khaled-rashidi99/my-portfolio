@@ -3,15 +3,16 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "./ui/button";
-import { FaCircleChevronRight } from "react-icons/fa6";
+import { FaCircleChevronRight, FaArrowDown } from "react-icons/fa6";
+
 export default function HeroSection() {
   return (
-    <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12">
+    <section className="flex flex-col ">
+      <div className="flex-1 grid grid-cols-1 lg:grid-cols-12">
         <div className="col-span-8 place-self-center">
           <h1 className="lg:text-5xl text-3xl mb-4 font-extrabold text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-blue-500 ">
-              Hello, I'm{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-blue-500">
+              Hello, I&apos;m{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -33,10 +34,10 @@ export default function HeroSection() {
             />
           </h1>
           <p className="text-[#ADB7BE] mb-6 text-lg lg:text-xl max-w-4xl">
-            I'm a Front-End Developer based in Damascus, Syria who loves to
+            I&apos;m a Front-End Developer based in Damascus, Syria who loves to
             create user-friendly and responsive websites, with a lifelong
             passion for coding.
-            <br /> I'm a Software Engineering student at the Syrian Virtual
+            <br /> I&apos;m a Software Engineering student at the Syrian Virtual
             University.
             <br />
             Feel free to contact me below!
@@ -48,7 +49,7 @@ export default function HeroSection() {
               size={"xl"}
               className="px-6 py-3 w-full sm:w-fit transition-all duration-300 hover:scale-105 hover:opacity-80"
             >
-              Let's Connect
+              Let&apos;s Connect
               <FaCircleChevronRight />
             </Button>
           </div>
@@ -60,9 +61,23 @@ export default function HeroSection() {
               alt="Hero"
               width={250}
               height={250}
+              // className="animate-bounce"
             />
           </div>
         </div>
+      </div>
+      <div className="flex justify-center max-sm:mt-24 sm:mt-40 md:mt-40 lg:mt-64 mb-8">
+        <Button
+          variant={"gradient"}
+          className="animate-bounce"
+          onClick={() => {
+            document
+              .getElementById("skills")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <FaArrowDown />
+        </Button>
       </div>
     </section>
   );
