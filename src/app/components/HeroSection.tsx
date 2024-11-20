@@ -19,13 +19,13 @@ export default function HeroSection() {
               className="mt-2"
               sequence={[
                 "Khaled AlRashidi",
-                1500,
+                2000,
                 "Tech Enthusiastic",
-                1500,
+                2000,
                 "Front-End Developer",
-                1500,
+                2000,
                 "Software Engineering Student",
-                1500,
+                2000,
               ]}
               wrapper="span"
               speed={50}
