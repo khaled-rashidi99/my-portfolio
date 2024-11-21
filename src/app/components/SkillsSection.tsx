@@ -73,11 +73,11 @@ const skills = [
 ];
 export default function SkillsSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 py-20 px-12 lg:px-24 lg:py-40">
-      <h1 className="text-center text-5xl font-bold bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent hover:scale-105 hover:cursor-default">
+    <section className="flex flex-col items-center justify-center gap-10 px-12 py-20 lg:px-24 lg:py-40">
+      <h1 className="bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-center text-5xl font-bold text-transparent hover:scale-105 hover:cursor-default">
         Skills
       </h1>
-      <p className="text-slate-300 text-lg">
+      <p className="text-lg text-slate-300">
         Throughout my dedicated journey, I have dealt with various programming
         languages, tech stacks, and technologies. Here are the ones that stand
         out:

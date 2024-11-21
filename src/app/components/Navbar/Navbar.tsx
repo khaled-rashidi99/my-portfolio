@@ -55,10 +55,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav>
-      <div className=" flex flex-wrap items-center justify-between py-6 max-sm:px-10 sm:px-12 md:px-12 lg:px-12 mx-auto bg-gradient-to-br from-purple-500 to-blue-500 opacity-90 lg:rounded-b-lg ">
+      <div className="mx-auto flex flex-wrap items-center justify-between bg-gradient-to-br from-purple-500 to-blue-500 py-6 opacity-90 max-sm:px-10 sm:px-12 md:px-12 lg:rounded-b-lg lg:px-12">
         <Link
           href="/"
-          className="text-2xl md:text-3xl text-white font-semibold hover:scale-95 hover:opacity-90 transition-all duration-300"
+          className="text-2xl font-semibold text-white transition-all duration-300 hover:scale-95 hover:opacity-90 md:text-3xl"
         >
           Khaled AlRashidi
         </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
           )}
         </div>
         <div className="menu hidden lg:block lg:w-auto">
-          <ul className="flex p-4 lg:p-0 lg:flex-row lg:space-x-8 mt-0">
+          <ul className="mt-0 flex p-4 lg:flex-row lg:space-x-8 lg:p-0">
             {links.map((link, index) => (
               <li key={index}>
                 <NavLinks href={link.href} title={link.title} />

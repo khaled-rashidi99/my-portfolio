@@ -7,11 +7,11 @@ import { FaCircleChevronRight, FaArrowDown } from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col ">
-      <div className="flex-1 grid grid-cols-1 lg:grid-cols-12">
+    <section className="flex flex-col">
+      <div className="grid flex-1 grid-cols-1 lg:grid-cols-12">
         <div className="col-span-8 place-self-center">
-          <h1 className="lg:text-5xl text-3xl mb-4 font-extrabold text-white">
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-purple-500 to-blue-500">
+          <h1 className="mb-4 text-3xl font-extrabold text-white lg:text-5xl">
+            <span className="bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent">
               Hello, I&apos;m{" "}
             </span>
             <br></br>
@@ -33,7 +33,7 @@ export default function HeroSection() {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] mb-6 text-lg lg:text-xl max-w-4xl">
+          <p className="mb-6 max-w-4xl text-lg text-[#ADB7BE] lg:text-xl">
             I&apos;m a Front-End Developer based in Damascus, Syria who loves to
             create user-friendly and responsive websites, with a lifelong
             passion for coding.
@@ -47,15 +47,15 @@ export default function HeroSection() {
             <Button
               variant={"gradient"}
               size={"xl"}
-              className="px-6 py-3 w-full sm:w-fit transition-all duration-300 hover:scale-105 hover:opacity-80"
+              className="w-full px-6 py-3 transition-all duration-300 hover:scale-105 hover:opacity-80 sm:w-fit"
             >
               Let&apos;s Connect
               <FaCircleChevronRight />
             </Button>
           </div>
         </div>
-        <div className="col-span-4 place-self-center mt-4 lg:mt-0">
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] flex items-center justify-center">
+        <div className="col-span-4 mt-4 place-self-center lg:mt-0">
+          <div className="flex h-[250px] w-[250px] items-center justify-center rounded-full bg-[#181818] lg:h-[300px] lg:w-[300px]">
             <Image
               src="/images/heroImage.png"
               alt="Hero"
@@ -66,7 +66,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center max-sm:mt-24 sm:mt-40 md:mt-40 lg:mt-64 mb-8">
+      <div className="mb-8 flex justify-center max-sm:mt-24 sm:mt-40 md:mt-40 lg:mt-64">
         <Button
           variant={"gradient"}
           className="animate-bounce"

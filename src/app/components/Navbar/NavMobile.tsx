@@ -5,15 +5,12 @@ import { links, socialLinks } from "./Navbar";
 
 export default function NavMobile() {
   return (
-    <div
-      className="lg:hidden flex flex-col items-center justify-center bg-gradient-to-tr from-purple-500 to-blue-500 opacity-90 rounded-b-lg 
-      animate-[fadeIn_0.3s_ease-in-out]"
-    >
-      <ul className="flex md:p-0 md:flex-row md:space-x-8 mt-0">
+    <div className="flex animate-[fadeIn_0.3s_ease-in-out] flex-col items-center justify-center rounded-b-lg bg-gradient-to-tr from-purple-500 to-blue-500 opacity-90 lg:hidden">
+      <ul className="mt-0 flex md:flex-row md:space-x-8 md:p-0">
         {links.map((link, index) => (
           <li
             key={index}
-            className="animate-[fadeIn_0.3s_ease-in-out] animate-delay-[index*100ms]"
+            className="animate-delay-[index*100ms] animate-[fadeIn_0.3s_ease-in-out]"
           >
             <NavLinks href={link.href} title={link.title} />
           </li>
@@ -23,7 +20,7 @@ export default function NavMobile() {
         {socialLinks.map((link, index) => (
           <li
             key={index}
-            className="animate-[fadeIn_0.3s_ease-in-out] animate-delay-[index*100ms]"
+            className="animate-delay-[index*100ms] animate-[fadeIn_0.3s_ease-in-out]"
           >
             <SocialLinks
               href={link.href}
