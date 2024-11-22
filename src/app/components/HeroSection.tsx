@@ -66,10 +66,10 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="mb-8 flex justify-center max-sm:mt-24 sm:mt-40 md:mt-40 lg:mt-64">
+      <div className="flex justify-center">
         <Button
           variant={"gradient"}
-          className="animate-bounce"
+          className="my-20 h-10 w-10 animate-bounce"
           onClick={() => {
             document
               .getElementById("skills")

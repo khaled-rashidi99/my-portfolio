@@ -12,77 +12,77 @@ import SkillCard from "./Skills/SkillCard";
 const skills = [
   {
     name: "HTML",
-    icon: <FaHtml5 size={"8rem"} />,
+    icon: <FaHtml5 />,
     color: "text-orange-500",
   },
   {
     name: "CSS",
-    icon: <FaCss3 size={"8rem"} />,
+    icon: <FaCss3 />,
     color: "text-blue-400",
   },
   {
     name: "JavaScript",
-    icon: <SiJavascript size={"7rem"} />,
+    icon: <SiJavascript />,
     color: "text-yellow-400",
   },
   {
     name: "TypeScript",
-    icon: <SiTypescript size={"7rem"} />,
+    icon: <SiTypescript />,
     color: "text-blue-500",
   },
   {
     name: "Tailwind CSS",
-    icon: <RiTailwindCssFill size={"8rem"} />,
+    icon: <RiTailwindCssFill />,
     color: "text-cyan-700",
   },
   {
     name: "Bootstrap",
-    icon: <FaBootstrap size={"8rem"} />,
+    icon: <FaBootstrap />,
     color: "text-purple-600",
   },
   {
     name: "ReactJS",
-    icon: <FaReact size={"8rem"} />,
+    icon: <FaReact />,
     color: "text-blue-500",
   },
   {
     name: "NextJS",
-    icon: <RiNextjsFill size={"8rem"} />,
+    icon: <RiNextjsFill />,
     color: "text-slate-200",
   },
   {
     name: "Vite",
-    icon: <SiVite size={"7rem"} />,
+    icon: <SiVite />,
     color: "text-purple-700",
   },
   {
     name: "Redux",
-    icon: <SiRedux size={"7rem"} />,
+    icon: <SiRedux />,
     color: "text-blue-600",
   },
   {
     name: "Material UI",
-    icon: <SiMui size={"7rem"} />,
+    icon: <SiMui />,
     color: "text-blue-600",
   },
   {
     name: "Shadcn UI",
-    icon: <SiShadcnui size={"7rem"} />,
+    icon: <SiShadcnui />,
     color: "text-gray-400",
   },
 ];
 export default function SkillsSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 px-12 py-20 lg:px-24 lg:py-40">
+    <section className="flex flex-col items-center justify-center gap-10">
       <h1 className="bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-center text-5xl font-bold text-transparent hover:scale-105 hover:cursor-default">
         Skills
       </h1>
-      <p className="text-lg text-slate-300">
+      <p className="text-center text-lg text-slate-300">
         Throughout my dedicated journey, I have dealt with various programming
-        languages, tech stacks, and technologies. Here are the ones that stand
-        out:
+        languages, tech stacks, and technologies. <br />
+        Here are the ones that stand out:
       </p>
-      <div className="mt-20 grid grid-cols-1 gap-10 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="mt-20 grid grid-cols-3 max-sm:gap-10 sm:gap-12 md:grid-cols-3 md:gap-12 lg:grid-cols-3 lg:gap-16 xl:grid-cols-6 xl:gap-20">
         {skills.map((skill, index) => (
           <SkillCard
             key={index}
