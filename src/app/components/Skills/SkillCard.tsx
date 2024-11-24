@@ -18,7 +18,7 @@ export default function SkillCard(cardProps: SkillCardProps) {
       </CardTitle>
 
       <CardContent
-        className={`flex items-center justify-center self-center p-6 max-sm:text-2xl sm:text-4xl md:text-7xl ${cardProps.iconColor} transition-opacity duration-500 group-hover:opacity-0`}
+        className={`flex items-center justify-center self-center p-6 max-sm:text-2xl sm:text-6xl md:text-7xl ${cardProps.iconColor} transition-opacity duration-500 group-hover:opacity-0`}
       >
         {cardProps.cardIcon}
       </CardContent>
