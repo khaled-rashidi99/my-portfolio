@@ -8,7 +8,7 @@ import {
   SiVite,
   SiShadcnui,
 } from "react-icons/si";
-import SkillCard from "./Skills/SkillCard";
+import SkillCard from "../Skills/SkillCard";
 const skills = [
   {
     name: "HTML",
@@ -73,7 +73,7 @@ const skills = [
 ];
 export default function SkillsSection() {
   return (
-    <section className="flex flex-col items-center justify-center gap-10">
+    <section className="flex flex-col items-center justify-center gap-10 px-4">
       <h1 className="bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-center text-5xl font-bold text-transparent hover:scale-105 hover:cursor-default">
         Skills
       </h1>

@@ -1,20 +1,21 @@
-import HeroSection from "./components/HeroSection";
-import SkillsSection from "./components/SkillsSection";
+import HeroSection from "./components/Sections/HeroSection";
+import ProjectsSection from "./components/Sections/ProjectsSection";
+import SkillsSection from "./components/Sections/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col max-sm:gap-44">
-      <div
-        className="contatiner mx-auto my-10 h-[calc(100dvh-84px)] px-12 py-12 lg:px-24 lg:py-40"
-        id="about"
-      >
+    <main className="flex min-h-[100dvh] flex-col gap-10">
+      <div className="container mx-auto min-h-[100dvh]" id="about">
         <HeroSection />
       </div>
-      <div
-        className="container mx-auto h-screen text-white max-sm:my-20 sm:my-16 md:my-14"
-        id="skills"
-      >
+      <div className="container mx-auto min-h-[100dvh] text-white" id="skills">
         <SkillsSection />
+      </div>
+      <div
+        className="container mx-auto min-h-[100dvh] text-white"
+        id="projects"
+      >
+        <ProjectsSection />
       </div>
     </main>
   );
