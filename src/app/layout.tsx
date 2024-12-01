@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import { Toaster } from "./components/ui/toaster";
+import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Khaled AlRashidi | Portfolio",
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Toaster />
+        <Footer />
       </body>
     </html>
   );

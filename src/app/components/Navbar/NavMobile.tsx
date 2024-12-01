@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLinks } from "./NavLinks";
 import { SocialLinks } from "./NavLinks";
-import { links, socialLinks } from "./Navbar";
+import { links, socialLinks } from "../../constants/links";
 
 export default function NavMobile() {
   return (

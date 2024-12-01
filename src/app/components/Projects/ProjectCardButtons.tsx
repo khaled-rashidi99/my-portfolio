@@ -18,7 +18,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { IoMdPhotos } from "react-icons/io";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import Image from "next/image";
+
 interface ProjectCardButtonsProps {
   projectGit: string;
   projectDemo: string;
@@ -58,7 +58,7 @@ export default function ProjectCardButtons(
               {buttonsProps.projectImages.map((image, index) => (
                 <CarouselItem key={index}>
                   <div className="p-1">
-                    <Image
+                    <img
                       src={image}
                       alt={`Project Image ${index + 1}`}
                       className="h-auto w-full object-contain"
