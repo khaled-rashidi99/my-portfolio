@@ -4,7 +4,7 @@ import {
   CardDescription,
   CardFooter,
   CardTitle,
-} from "../components/ui/card";
+} from "../ui/card";
 import React from "react";
 import ProjectCardButtons from "./ProjectCardButtons";
 

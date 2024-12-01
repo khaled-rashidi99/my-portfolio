@@ -19,13 +19,13 @@ export default function HeroSection() {
               className="mt-2"
               sequence={[
                 "Khaled AlRashidi",
-                2000,
+                1950,
                 "Tech Enthusiastic",
-                2000,
+                1950,
                 "Front-End Developer",
-                2000,
+                1950,
                 "Software Engineering Student",
-                2000,
+                1950,
               ]}
               wrapper="span"
               speed={30}
@@ -47,6 +47,11 @@ export default function HeroSection() {
             <Button
               variant={"gradient"}
               size={"xl"}
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="w-full px-6 py-3 transition-all duration-300 hover:scale-105 hover:px-10 hover:opacity-80 sm:w-fit"
             >
               Let&apos;s Connect

@@ -17,7 +17,7 @@ import NavMobile from "./NavMobile";
 export const links = [
   { href: "/#about", title: "About" },
   { href: "/#skills", title: "Skills" },
-  { href: "/projects", title: "Projects" },
+  { href: "/#projects", title: "Projects" },
   { href: "/#contact", title: "Contact" },
 ];
 

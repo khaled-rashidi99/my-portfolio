@@ -1,23 +1,24 @@
 "use client";
-import { Button } from "../components/ui/button";
+import { Button } from "../ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogTrigger,
-} from "../components/ui/dialog";
+} from "../ui/dialog";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../components/ui/carousel";
+} from "../ui/carousel";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { IoMdPhotos } from "react-icons/io";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import Image from "next/image";
 interface ProjectCardButtonsProps {
   projectGit: string;
   projectDemo: string;
@@ -31,7 +32,8 @@ export default function ProjectCardButtons(
       <Button
         variant={"gradient"}
         size={"icon"}
-        className="h-10 w-10 transition-all duration-300 hover:scale-110"
+        disabled={buttonsProps.projectDemo === ""}
+        className="h-10 w-10 transition-all duration-300 hover:scale-110 disabled:opacity-50"
         onClick={() => {
           window.open(`${buttonsProps.projectDemo}`, "_blank");
         }}
@@ -56,7 +58,7 @@ export default function ProjectCardButtons(
               {buttonsProps.projectImages.map((image, index) => (
                 <CarouselItem key={index}>
                   <div className="p-1">
-                    <img
+                    <Image
                       src={image}
                       alt={`Project Image ${index + 1}`}
                       className="h-auto w-full object-contain"
@@ -74,6 +76,7 @@ export default function ProjectCardButtons(
         variant={"gradient"}
         size={"icon"}
         className="h-10 w-10 transition-all duration-300 hover:scale-110"
+        disabled={buttonsProps.projectGit === ""}
         onClick={() => {
           window.open(`${buttonsProps.projectGit}`, "_blank");
         }}

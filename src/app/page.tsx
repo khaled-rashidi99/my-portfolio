@@ -1,6 +1,7 @@
 import HeroSection from "./components/Sections/HeroSection";
 import ProjectsSection from "./components/Sections/ProjectsSection";
 import SkillsSection from "./components/Sections/SkillsSection";
+import ContactSection from "./components/Sections/ContactSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
         id="projects"
       >
         <ProjectsSection />
+      </div>
+      <div className="container mx-auto min-h-[100dvh] text-white" id="contact">
+        <ContactSection />
       </div>
     </main>
   );

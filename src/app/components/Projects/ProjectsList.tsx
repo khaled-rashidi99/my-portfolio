@@ -1,10 +1,8 @@
 import ProjectCard from "./ProjectCard";
-import ProjectsHero from "./ProjectsHero";
-import { projects } from "../constants/projects";
-export default function Projects() {
+import { projects } from "../../constants/projects";
+export default function ProjectsList() {
   return (
     <div className="my-20">
-      <ProjectsHero />
       <div className="container mx-auto my-20 grid grid-cols-1 place-items-center gap-20 lg:grid-cols-2 xl:grid-cols-2">
         {projects.map((project, index) => (
           <ProjectCard
