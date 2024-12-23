@@ -41,4 +41,25 @@ export const projects = [
       "/images/projects/budget-app/6.webp",
     ],
   },
+  {
+    cardName: "iBook Library App",
+    cardBackground: "/images/projects/book-library/main.webp",
+    cardDetails:
+      "A book library app, with the ability to borrow books integreted from APIs, view borrowing history, and return books after due date.",
+    cardStack: "ReactJS | TS | React-Router | MUI | TailwindCSS",
+    projectGit: "https://github.com/khaled-rashidi99/Book-Library",
+    projectDemo: "https://ibook-library.vercel.app/",
+    projectImages: [
+      "/images/projects/book-library/main.webp",
+      "/images/projects/book-library/1.webp",
+      "/images/projects/book-library/2.webp",
+      "/images/projects/book-library/3.webp",
+      "/images/projects/book-library/4.webp",
+      "/images/projects/book-library/5.webp",
+      "/images/projects/book-library/6.webp",
+      "/images/projects/book-library/7.webp",
+      "/images/projects/book-library/8.webp",
+      "/images/projects/book-library/9.webp",
+    ],
+  },
 ];
