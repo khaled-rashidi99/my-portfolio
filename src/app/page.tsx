@@ -6,7 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   return (
-    <main className="flex min-h-[100dvh] flex-col gap-10">
+    <main className="flex min-h-[100dvh] flex-col">
       <div className="container mx-auto min-h-[100dvh]" id="about">
         <HeroSection />
       </div>

@@ -20,7 +20,7 @@ interface ProjectCardProps {
 export default function ProjectCard(cardProps: ProjectCardProps) {
   return (
     <Card
-      className="group relative flex aspect-video cursor-default items-center justify-center rounded-lg border-none text-center shadow-ring transition-all duration-700 hover:scale-95 hover:rounded-xl hover:bg-opacity-90 max-sm:h-[400px] max-sm:w-[300px] sm:h-[350px] sm:w-[360px] md:h-[350px] md:w-[400px] lg:h-[350px] lg:w-[400px] xl:h-[350px] xl:w-[570px]"
+      className="group relative flex aspect-video cursor-default items-center justify-center rounded-lg border-none text-center shadow-ring transition-all duration-700 hover:scale-95 hover:rounded-xl hover:bg-opacity-90 max-sm:h-[400px] max-sm:w-[350px] sm:h-[400px] sm:w-[500px] md:h-[400px] md:w-[600px] lg:h-[400px] lg:w-[400px] xl:h-[350px] xl:w-[570px]"
       style={{
         backgroundImage: `url(${cardProps.cardBackground})`,
         backgroundSize: "cover",

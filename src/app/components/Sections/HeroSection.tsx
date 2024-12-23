@@ -8,9 +8,9 @@ import { FaCircleChevronRight, FaArrowDown } from "react-icons/fa6";
 export default function HeroSection() {
   return (
     <section className="flex flex-col py-20">
-      <div className="grid flex-1 grid-cols-1 py-20 lg:grid-cols-12">
+      <div className="grid flex-1 grid-cols-1 lg:grid-cols-12 lg:py-20">
         <div className="col-span-8 place-self-center px-8">
-          <h1 className="mb-4 text-3xl font-extrabold text-white lg:text-5xl">
+          <h1 className="mb-4 font-extrabold text-white max-sm:text-xl sm:text-3xl xl:text-5xl">
             <span className="bg-gradient-to-br from-purple-500 to-blue-500 bg-clip-text text-transparent">
               Hello, I&apos;m{" "}
             </span>

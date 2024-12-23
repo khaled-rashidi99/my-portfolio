@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="mx-auto flex flex-wrap items-center justify-between bg-gradient-to-br from-purple-500 to-blue-500 py-6 opacity-90 max-sm:px-10 sm:px-12 md:px-12 lg:rounded-b-lg lg:px-12">
         <Link
           href="/"
-          className="text-2xl font-semibold text-white transition-all duration-300 hover:scale-95 hover:opacity-90 md:text-3xl"
+          className="text-2xl font-semibold text-white transition-all duration-300 hover:scale-95 hover:text-[#121212] hover:opacity-90 md:text-3xl"
         >
           Khaled AlRashidi
         </Link>

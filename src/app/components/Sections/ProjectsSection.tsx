@@ -10,7 +10,9 @@ export default function ProjectsSection() {
         I have developed various projects utizilizing the latest technologies
         and frameworks, such as ReactJS, NextJS, TailwindCSS, Material UI, and
         many more. <br />
-        Let&apos;s take a dive into my projects!
+        All the projects are responsive and mobile-friendly. <br />
+        I&apos;m always eager to learn new thechnologies and improve my skills.
+        <br />
       </p>
       <ProjectsList />
     </section>
