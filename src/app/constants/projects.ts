@@ -62,4 +62,27 @@ export const projects = [
       "/images/projects/book-library/9.webp",
     ],
   },
+  {
+    cardName: "iHMS App",
+    cardBackground: "/images/projects/ihms-app/main.webp",
+    cardDetails:
+      "A hospital management system app, with the ability to add fake data for doctors, services, and other data. This is a functional template, the app needs integration with the hospital's APIs.",
+    cardStack: "ReactJS | TS | Redux | Axios | React-Router | MUI",
+    projectGit:
+      "https://github.com/khaled-rashidi99/Hospital-Management-System",
+    projectDemo: "https://ihospital-management-system.vercel.app/",
+    projectImages: [
+      "/images/projects/ihms-app/main.webp",
+      "/images/projects/ihms-app/1.webp",
+      "/images/projects/ihms-app/2.webp",
+      "/images/projects/ihms-app/3.webp",
+      "/images/projects/ihms-app/4.webp",
+      "/images/projects/ihms-app/5.webp",
+      "/images/projects/ihms-app/6.webp",
+      "/images/projects/ihms-app/7.webp",
+      "/images/projects/ihms-app/8.webp",
+      "/images/projects/ihms-app/9.webp",
+      "/images/projects/ihms-app/10.webp",
+    ],
+  },
 ];
