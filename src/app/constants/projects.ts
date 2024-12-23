@@ -22,4 +22,23 @@ export const projects = [
       "/images/projects/istore-app/11.webp",
     ],
   },
+  {
+    cardName: "iBudget App",
+    cardBackground: "/images/projects/budget-app/main.webp",
+    cardDetails:
+      "A personal spending management app, with the ability to track expenses and incomes, and generate Excel reports.",
+    cardStack: "ReactJS | TS | Redux | React-Router | MUI | TailwindCSS",
+    projectGit:
+      "https://github.com/khaled-rashidi99/Budget-Spending-Management-App",
+    projectDemo: "https://budget-spending-management-app.vercel.app/",
+    projectImages: [
+      "/images/projects/budget-app/main.webp",
+      "/images/projects/budget-app/1.webp",
+      "/images/projects/budget-app/2.webp",
+      "/images/projects/budget-app/3.webp",
+      "/images/projects/budget-app/4.webp",
+      "/images/projects/budget-app/5.webp",
+      "/images/projects/budget-app/6.webp",
+    ],
+  },
 ];
