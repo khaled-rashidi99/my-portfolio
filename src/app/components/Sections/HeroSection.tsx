@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "../ui/button";
-import { FaCircleChevronRight, FaArrowDown } from "react-icons/fa6";
+import { FaCircleChevronRight, FaArrowDown, FaDownload } from "react-icons/fa6";
 
 export default function HeroSection() {
   return (
@@ -43,7 +43,7 @@ export default function HeroSection() {
             Feel free to contact me below!
           </p>
 
-          <div>
+          <div className="flex flex-col gap-4 sm:flex-row">
             <Button
               variant={"gradient"}
               size={"xl"}
@@ -57,6 +57,19 @@ export default function HeroSection() {
               Let&apos;s Connect
               <FaCircleChevronRight />
             </Button>
+            <Button
+              variant={"gradient"}
+              size={"xl"}
+              className="w-full px-6 py-3 transition-all duration-300 hover:scale-105 hover:px-10 hover:opacity-80 sm:w-fit"
+            >
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_VQ2OHKqhkTyRKPXE6ICaCFngBhvLQPu"
+                download="Khaled_AlRashidi_Resume.pdf"
+              >
+                Download CV
+              </a>
+              <FaDownload />
+            </Button>
           </div>
         </div>
         <div className="col-span-4 mt-12 place-self-center lg:mt-0">
@@ -66,7 +79,6 @@ export default function HeroSection() {
               alt="Hero"
               width={250}
               height={250}
-              // className="animate-bounce"
             />
           </div>
         </div>
